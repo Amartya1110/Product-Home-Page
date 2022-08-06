@@ -1,0 +1,211 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 100px 20px 30px;
+}
+
+/* ============================== */
+/* =========== Nav Bar ========== */
+/* ============================== */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+
+nav> img:first-child {
+    /* flex-grow: 0; -> No need to write as this is the default value*/
+    height: 40px;
+}
+
+.nav-items {
+    flex-grow: 1;
+    padding: 0 5vw;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+nav img:last-child {
+    /* flex-grow: 0; -> No need to write as this is the default value*/
+    height: 35px;
+    /* The img tag is an inline-block element so we can have the effect of the width- property */
+}
+
+.nav-item {
+    /* font-family: "Fredoka One"; */
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.nav-item:hover {
+    color: #fe5e35;
+    font-family: "Fredoka One";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active-item {
+    color: #fe5e35;
+    font-family: "Fredoka One";
+    font-size: 20px;
+}
+
+
+/* ============================== */
+/* =========== Intro Section ========== */
+/* ============================== */
+.intro-section {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+/* ========== Left section ========== */
+.left-section {
+    /* width: calc(100vw - 20px - 550px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.left-section>h3 {
+    font-family: "Poppins";
+    font-size: 5vh;
+}
+
+.left-section>h3 img {
+    height: 5vh;
+}
+
+.left-section>h1 {
+    font-family: "Fredoka One";
+    font-size: 10vh;
+}
+
+.sub-headlines {
+    padding: 0 100px;
+    font-family: "Poppins";
+    font-size: 4vh;
+    font-weight: 300;
+}
+
+.sub-headline {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sub-headline img {
+    box-sizing : content-box;
+    height: 3vh;
+    background-color: #fe5e35;
+    border: 1vh solid #fe5e35;
+    border-radius: 4vh;
+    margin-right: 20px;
+}
+
+.text {
+    font-family: "Poppins";
+    font-size: 15px;
+    max-width: 600px;
+    opacity: 0.5;
+}
+
+.action-btns {
+    display: flex;
+}
+
+.action-btn {
+    background-color: #fe5e35;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 2.5vh;
+    padding: 1.5vh 2vw ;
+    border: none;
+    border-radius: 3.5vh;
+    cursor: pointer;
+    margin-right:30px;
+}
+
+
+/* ========== Right Section ========== */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headphone-div {
+    /* To make the div wrap around its content is by declaraing the div as - display:inline-block */
+    /* width: 550px; */
+    height: 60vh;
+    text-align: center;
+    position: relative;
+    
+}
+
+/* Styling the 3 dots */
+.dots{
+    display: flex;
+}
+.dot{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.yellow-dot {
+    background-color: #ffff00;
+}
+.tomato-dot {
+    background-color: #fe5e35;
+}
+.black-dot {
+    background-color: #000000;
+}
+
+
+.discount {
+    height: 30%;
+    position: absolute;
+    bottom : 40%;
+    left: 0;
+    transform: translate(-30%, 100%);
+}
+
+.discount-content {
+    color: #ffffff;
+    font-family: "Fredoka One";
+    font-size: calc(60vh * 0.3 * 0.15);
+    font-weight: 300;
+    position: absolute;
+    bottom : 35%;
+    left: 0;
+    transform: translate(-15%, 120%);
+}
+
+.discount-content h4 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.headphone-div> img:last-child {
+    /* Never use gap in between the element and its pseudo-element */
+    /* "img :last-child" is diffrent from "img:last-child" */
+    /* The following line to see the image properly so that we can place the other items over it easily */
+    /* border: 2px solid red; */
+    height: 100%;
+}
